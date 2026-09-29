@@ -22,7 +22,7 @@ create_weather_table() # tworzy tabelę danych w SQL zgodnie z funkcją w mysql_
 
     time.sleep(15) # co 15 sekund uruchamia funkcje od nowa, czyli pobiera dane pogodowe i zapisuje w SQL
 
-
+# placeholder: threads
 
 # if "__main__" == __name__:
 #     render()
