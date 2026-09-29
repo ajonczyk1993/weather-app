@@ -11,14 +11,14 @@ create_weather_table() # tworzy tabelę danych w SQL zgodnie z funkcją w mysql_
 
 # x = get_weather_records() # uruchamia funkcję z mysql_db.py która pobiera dane z bazy SQL które wcześniej tam zapisaliśmy
 # print(x)
-while True:
-    #1. Pobranie danych pogodowych
-    weather = get_weather()
-    #2. Wrzucenie danych do serwisu files - funkcji create_excel
-    # [weather] w liście bo pandas do DF oczekuje listy
-    create_excel([weather])
-    save_weather_record(weather)
-    print("Pobieram dane pogodowe")
+# while True:
+#     #1. Pobranie danych pogodowych
+#     weather = get_weather()
+#     #2. Wrzucenie danych do serwisu files - funkcji create_excel
+#     # [weather] w liście bo pandas do DF oczekuje listy
+#     create_excel([weather])
+#     save_weather_record(weather)
+#     print("Pobieram dane pogodowe")
 
     time.sleep(15) # co 15 sekund uruchamia funkcje od nowa, czyli pobiera dane pogodowe i zapisuje w SQL
 
